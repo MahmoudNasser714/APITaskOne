@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Web;
+
+namespace API_TASKS.Models
+{
+    public class UserViewModelcs
+    {
+        [StringLength(50)]
+        public string arabic_name { get; set; }
+
+        [StringLength(50)]
+        public string English_name { get; set; }
+
+        [StringLength(255)]
+        public string Email { get; set; }
+
+        [StringLength(50)]
+        public string Password { get; set; }
+
+        [StringLength(11)]
+        public string Mobile { get; set; }
+
+        public int ID { get; set; }
+    }
+}
